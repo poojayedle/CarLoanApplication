@@ -8,7 +8,7 @@ import { LocationComponent } from './template/location/location.component';
 import { EnquiryComponent } from './template/enquiry/enquiry.component';
 import { DashBoardComponent } from './entry/dash-board/dash-board.component';
 import { EmailComponent } from './entry/email/email.component';
-import { EmiCalculator } from './Model/emi-calculator';
+
 import { EmiCalculatorComponent } from './template/emi-calculator/emi-calculator.component';
 
 const routes: Routes = [
