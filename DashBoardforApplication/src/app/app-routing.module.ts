@@ -20,46 +20,46 @@ import { BankManagerModule } from './modules/bank-manager/bank-manager.module';
 
 const routes: Routes = [
   {
-    path:"",component:HomeComponent,
-    children:[
-            {
-              path:'about',component:AboutUSComponent
-            },
-            {
-path:'emi',component:EmiCalculatorComponent
-            },
-            {
-              path:'contact',component:ContactUsComponent
-            },
-            {
-              path:'location',component:LocationComponent
-            }      
-          ]
+    path: "", component: HomeComponent,
+    children: [
+      {
+        path: 'about', component: AboutUSComponent
+      },
+      {
+        path: 'emi', component: EmiCalculatorComponent
+      },
+      {
+        path: 'contact', component: ContactUsComponent
+      },
+      {
+        path: 'location', component: LocationComponent
+      }
+    ]
   },
   {
-    path:"login",component:LoginComponent
+    path: "login", component: LoginComponent
   },
   {
-        path:'enquiry',component:EnquiryComponent
-      },
+    path: 'enquiry', component: EnquiryComponent
+  },
   {
-    path:"role",component:AdminLayoutComponent,
-    children:[
+    path: "role", component: AdminLayoutComponent,
+    children: [
       {
-        path:"RE",loadChildren:()=>relationalExecutiveModule
+        path: "RE", loadChildren: () => relationalExecutiveModule
       },
       {
-        path:"OE", loadChildren:()=>OperationalExecutiveModule
+        path: "OE", loadChildren: () => OperationalExecutiveModule
       },
       {
-        path:"CM", loadChildren:()=>CreditManagerModule
+        path: "CM", loadChildren: () => CreditManagerModule
       },
       {
-        path:"BM", loadChildren:()=>BankManagerModule
+        path: "BM", loadChildren: () => BankManagerModule
       }
     ]
   }
-  
+
 
 ];
 
