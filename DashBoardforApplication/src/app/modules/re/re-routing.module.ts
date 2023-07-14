@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewEnquiryComponent } from './view-enquiry/view-enquiry.component';
 import { GetCibilComponent } from './get-cibil/get-cibil.component';
+import { ApplyLoanComponent } from './apply-loan/apply-loan.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path:'req_cibil',component:GetCibilComponent
+  },
+  {
+    path:'applyLoan',component:ApplyLoanComponent
   }
 ];
 
