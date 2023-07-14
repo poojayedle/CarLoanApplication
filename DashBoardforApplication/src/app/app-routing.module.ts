@@ -10,44 +10,57 @@ import { DashBoardComponent } from './entry/dash-board/dash-board.component';
 import { EmailComponent } from './entry/email/email.component';
 
 import { EmiCalculatorComponent } from './template/emi-calculator/emi-calculator.component';
+import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
+import { relationalExecutiveModule } from './modules/RelationshipExecutive/relational-executive.module';
+import { OperationalExecutiveModule } from './modules/operational-executive/operational-executive.module';
+import { CreditManagerModule } from './modules/credit-manager/credit-manager.module';
+import { BankManagerModule } from './modules/bank-manager/bank-manager.module';
+
+
 
 const routes: Routes = [
   {
-    path:'',component:HomeComponent,
+    path:"",component:HomeComponent,
     children:[
-      {
-        path:'about',component:AboutUSComponent
-      },
-      {
-        path:'login',component:LoginComponent
-      },
-      {
-        path:'contact',component:ContactUsComponent
-      },
-      {
-        path:'location',component:LocationComponent
-      },
-      {
-        path:'enquiry',component:EnquiryComponent
-      }
-      
-    ]
-  },
-  
-    {
-      path:'emi',component:EmiCalculatorComponent
-    
+            {
+              path:'about',component:AboutUSComponent
+            },
+            {
+path:'emi',component:EmiCalculatorComponent
+            },
+            {
+              path:'contact',component:ContactUsComponent
+            },
+            {
+              path:'location',component:LocationComponent
+            }      
+          ]
   },
   {
-    path:'dash',component:DashBoardComponent,children:[
+    path:"login",component:LoginComponent
+  },
+  {
+        path:'enquiry',component:EnquiryComponent
+      },
+  {
+    path:"role",component:AdminLayoutComponent,
+    children:[
       {
-        path:'re' ,loadChildren:()=>import('src/app/modules/re/re.module').then(m=>m.ReModule)
-      },//For lazy loading
+        path:"RE",loadChildren:()=>relationalExecutiveModule
+      },
       {
-        path:'oe' , loadChildren:()=>import('src/app/modules/oe/oe.module').then(m=>m.OeModule)
+        path:"OE", loadChildren:()=>OperationalExecutiveModule
+      },
+      {
+        path:"CM", loadChildren:()=>CreditManagerModule
+      },
+      {
+        path:"BM", loadChildren:()=>BankManagerModule
       }
     ]
   }
+  
+
 ];
 
 @NgModule({
