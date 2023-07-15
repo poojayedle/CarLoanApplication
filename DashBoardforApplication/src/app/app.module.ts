@@ -33,18 +33,11 @@ import { SideNavComponent } from './navaBar/side-nav/side-nav.component';
     LoginComponent,
     LocationComponent,
     ContactUsComponent,
-<<<<<<< HEAD
     EnquiryComponent,
-    DashBoardComponent,
     AdminLayoutComponent,
-=======
-    EnquiryComponent,    
-AdminLayoutComponent,
->>>>>>> b29de6201bacc6975c5d73a52be38041abb6dddf
     EmailComponent,
     EmiCalculatorComponent,
     SideNavComponent,
-    UserMenuComponent
     
   ],
   imports: [
@@ -52,11 +45,7 @@ AdminLayoutComponent,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-<<<<<<< HEAD
-    FormsModule
-=======
     FormsModule,
->>>>>>> b29de6201bacc6975c5d73a52be38041abb6dddf
     // NgxUiLoaderModule,
     // NgxUiLoaderHttpModule.forRoot({showForeground:true})
   ],
