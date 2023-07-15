@@ -6,8 +6,6 @@ import { LoginComponent } from './entry/login/login.component';
 import { ContactUsComponent } from './template/contact-us/contact-us.component';
 import { LocationComponent } from './template/location/location.component';
 import { EnquiryComponent } from './template/enquiry/enquiry.component';
-import { DashBoardComponent } from './entry/dash-board/dash-board.component';
-import { EmailComponent } from './entry/email/email.component';
 
 import { EmiCalculatorComponent } from './template/emi-calculator/emi-calculator.component';
 import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
@@ -37,7 +35,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: "login", component: LoginComponent
+    path: "log", component: LoginComponent
   },
   {
     path: "enquiry", component: EnquiryComponent

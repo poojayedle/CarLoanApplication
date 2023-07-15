@@ -11,5 +11,6 @@ export class AdminLayoutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  sideNavStatus:boolean=false;
+   sideNavStatus:boolean=false;
+  
 }

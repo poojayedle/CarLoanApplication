@@ -47,12 +47,19 @@ export class LoginComponent implements OnInit{
     repassword: "",
     email: ""
   };
-  constructor(private router: Router,fb:FormBuilder) {}
+  constructor(private router: Router,private fb:FormBuilder) {}
   loginForm!: FormGroup;
   username: string='';
   password:string='';
-  ngOnInit() {}
-  login(u) {
+  ngOnInit() {
+  //   this.loginForm=this.fb.group(
+  //     {
+  //       username:[],
+  // password:[]
+  //     }
+  //   )
+  }
+  onLogin(u) {
     console.log("login called");
     console.log(u.username,u.password);
     
@@ -76,15 +83,7 @@ export class LoginComponent implements OnInit{
        sessionStorage.setItem('role', 'BM');
       this.router.navigateByUrl("role/BM");
     }
-
-
-
-
-
-
-
-
-    
+   
 
     if (u.username === 'emp' && u.password === 'emp') {
       console.log('in emp');
