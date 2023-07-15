@@ -22,7 +22,7 @@ import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
 import { HomeHeaderComponent } from './navaBar/homeHeader/home-header/home-header.component';
 import { SideNavComponent } from './navaBar/side-nav/side-nav.component';
 
-// import{NgxUiLoaderModule} from 'ngx-ui-loader'
+//  import{NgxUiLoaderHttpModule, NgxUiLoaderModule} from 'ngx-ui-loader'
 
 @NgModule({
   declarations: [
