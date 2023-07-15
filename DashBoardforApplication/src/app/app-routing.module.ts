@@ -40,7 +40,7 @@ const routes: Routes = [
     path: "login", component: LoginComponent
   },
   {
-    path: 'enquiry', component: EnquiryComponent
+    path: "enquiry", component: EnquiryComponent
   },
   {
     path: "role", component: AdminLayoutComponent,
