@@ -34,7 +34,7 @@ import { SideNavComponent } from './navaBar/side-nav/side-nav.component';
     LocationComponent,
     ContactUsComponent,
     EnquiryComponent,    
-AdminLayoutComponent,
+    AdminLayoutComponent,
     EmailComponent,
     EmiCalculatorComponent,
     SideNavComponent
