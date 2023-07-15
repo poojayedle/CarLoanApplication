@@ -1,0 +1,26 @@
+/* .header{
+    background-color: black;
+    color: bisque;
+}
+h1{
+    margin: 0%;
+}
+#footer{
+    bottom: 0;
+} */
+
+nav {
+    height: 100%;
+  }
+
+  .side-nav-button{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .side-nav-button:hover{
+    background-color:rgb(199, 58, 60);
+    border-radius: 30%;
+  }
