@@ -33,12 +33,14 @@ import { SideNavComponent } from './navaBar/side-nav/side-nav.component';
     LoginComponent,
     LocationComponent,
     ContactUsComponent,
-    EnquiryComponent,    
+
+    EnquiryComponent,
+
     AdminLayoutComponent,
     EmailComponent,
     EmiCalculatorComponent,
     SideNavComponent,
-    
+
     
   ],
   imports: [
@@ -46,9 +48,11 @@ import { SideNavComponent } from './navaBar/side-nav/side-nav.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+
     FormsModule
 
     
+
     // NgxUiLoaderModule,
     // NgxUiLoaderHttpModule.forRoot({showForeground:true})
   ],

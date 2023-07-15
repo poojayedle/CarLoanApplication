@@ -48,6 +48,8 @@ export class LoginComponent implements OnInit{
     email: ""
   };
 
+
+
   constructor(private router: Router, private fb:FormBuilder) {}
   loginForm: FormGroup;
   username: string='';
@@ -55,6 +57,7 @@ export class LoginComponent implements OnInit{
   
   ngOnInit() {}
   login(u) {
+
     console.log("login called");
     console.log(u.username,u.password);
     
