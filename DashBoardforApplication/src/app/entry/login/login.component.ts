@@ -47,11 +47,16 @@ export class LoginComponent implements OnInit{
     repassword: "",
     email: ""
   };
-  constructor(private router: Router,fb:FormBuilder) {}
-  loginForm!: FormGroup;
+  constructor(private router: Router, private fb:FormBuilder) {}
+  loginForm: FormGroup;
   username: string='';
   password:string='';
-  ngOnInit() {}
+  ngOnInit() {
+    this.loginForm=this.fb.group({
+          username:[],
+          password:[]
+        })
+  }
   login(u) {
     console.log("login called");
     console.log(u.username,u.password);

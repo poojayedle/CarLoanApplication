@@ -27,4 +27,8 @@ export class CommonService {
   createEmi(emi:any){
     return this.http.post("http://localhost:1234/CaculateEmi",emi)
   }
+
+  getEnquires(){
+    return this.http.get("http://localhost:1234/getAllEnquiry")
+  }
 }

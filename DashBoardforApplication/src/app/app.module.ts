@@ -7,7 +7,7 @@ import { HomeComponent } from './entry/home/home.component';
 import { HomeHeaderComponent } from './homeHeader/home-header/home-header.component';
 import { AboutUSComponent } from './template/about-us/about-us.component';
 import { LoginComponent } from './entry/login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocationComponent } from './template/location/location.component';
 import { ContactUsComponent } from './template/contact-us/contact-us.component';
 import { EnquiryComponent } from './template/enquiry/enquiry.component';
@@ -32,11 +32,11 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     ContactUsComponent,
     EnquiryComponent,
     DashBoardComponent,
-    
-AdminLayoutComponent,
+    AdminLayoutComponent,
     EmailComponent,
     EmiCalculatorComponent,
-    SideNavComponent
+    SideNavComponent,
+    UserMenuComponent
     
   ],
   imports: [
@@ -44,6 +44,7 @@ AdminLayoutComponent,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule
     // NgxUiLoaderModule,
     // NgxUiLoaderHttpModule.forRoot({showForeground:true})
   ],
