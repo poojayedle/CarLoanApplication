@@ -18,9 +18,9 @@ export class HomeHeaderComponent implements OnInit{
     this.menuStatus=!this.menuStatus;
     this.sideNavToggled.emit(this.menuStatus);
   }
-  // logout(){
-  //   this.route.navigate(['log']);
-  // }
+  logout(){
+    this.route.navigate(['log']);
+  }
   emi(){
     this.route.navigate(['emi']);
   }

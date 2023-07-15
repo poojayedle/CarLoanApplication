@@ -44,7 +44,7 @@ const routes: Routes = [
     path: "role", component: AdminLayoutComponent,
     children: [
       {
-        path: 're', loadChildren: () => relationalExecutiveModule
+        path: 'RE', loadChildren: () => relationalExecutiveModule
       },
       {
         path: "OE", loadChildren: () => OperationalExecutiveModule

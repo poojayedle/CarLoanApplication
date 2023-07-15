@@ -1,15 +1,8 @@
-/* .header{
-    background-color: black;
-    color: bisque;
-}
-h1{
-    margin: 0%;
-}
-#footer{
-    bottom: 0;
-} */
 
-nav {
+
+
+
+  nav {
     height: 100%;
   }
 
@@ -21,6 +14,6 @@ nav {
     cursor: pointer;
   }
   .side-nav-button:hover{
-    background-color:rgb(199, 58, 60);
+    background-color:rgb(176, 28, 28);
     border-radius: 30%;
   }
